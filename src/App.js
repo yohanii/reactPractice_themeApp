@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import NameBook from "./NameBook";
+import {ThemeProvider} from "./ThemeProvider";
+import ThemeToggle from "./ThemeToggle";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div className="App">
+            <ThemeProvider>
+                <h1>이름 날짜 출력</h1>
+                <NameBook />
+                <ThemeToggle />
+            </ThemeProvider>
+        </div>
+    );
 }
 
 export default App;

@@ -7,6 +7,38 @@
   pointer-events: none;
 }
 
+main {
+  margin: 30px;
+}
+
+.namebook-light {
+  margin: 30px;
+}
+
+.namebook-light > input {
+  margin: 10px;
+}
+
+.namebook-dark {
+  margin: 30px;
+  background: black;
+  color : #61dafb;
+}
+
+.namebook-dark > input {
+  margin: 10px;
+}
+
+.theme-toggle {
+  position: fixed;
+  margin : 30px;
+  top : 0;
+}
+
+.theme-toggle > button {
+  margin : 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
